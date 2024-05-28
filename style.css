@@ -1,0 +1,111 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    margin-left: 70px; /* Adjust the value as needed (gap) */
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px; /* Adjust the value as needed */
+    left: 0;
+    background-color: #ce4f20; /* Underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#home{
+    background-color: #4e4e4e;
+    padding-bottom: 300px;
+}
+/* for rotating text */
+.rotating-text {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    color: white;
+    text-align: center;  /* Center the text */
+    margin: 0 auto;  /* Center the container */
+    width: fit-content;
+    padding-top: 250px;
+    padding-right: 450px;
+}
+
+.rotating-text p {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+.rotating-text .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.rotating-text .letter {
+    transform-origin: center center 25px;
+}
+
+.rotating-text .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.rotating-text .letter.in {
+    transition: 0.38s ease;
+}
+
+.rotating-text .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.alizarin {
+    color: #e74c3c;
+}
+
+.wisteria {
+    color: #8e44ad;
+}
+
+.peter-river {
+    color: #3498db;
+}
+
+.emerald {
+    color: #2ecc71;
+}
+
+.sun-flower {
+    color: #f1c40f;
+}
+
+.rotating-text #rotating-text-main {
+    color: black;
+}

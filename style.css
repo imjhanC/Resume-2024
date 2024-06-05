@@ -42,7 +42,7 @@ nav {
 
 #home{
     background-color: #4e4e4e;
-    padding-bottom: 300px;
+    padding-bottom: 500px;
 }
 /* for rotating text */
 .rotating-text {
@@ -108,4 +108,17 @@ nav {
 
 .rotating-text #rotating-text-main {
     color: black;
+}
+
+#about-me-p{
+    font-size: 50px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(to right, #ff0000, 
+                    #ffa600, #cf23cf, #fffb00);
+                    -webkit-text-fill-color: transparent; 
+                    -webkit-background-clip: text;
+    padding-left: 800px;
 }

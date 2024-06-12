@@ -48,13 +48,13 @@ nav {
 .rotating-text {
     font-family: Lato, sans-serif;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 100px;
     color: white;
     text-align: center;  /* Center the text */
     margin: 0 auto;  /* Center the container */
     width: fit-content;
     padding-top: 250px;
-    padding-right: 450px;
+    padding-right: 900px;
 }
 
 .rotating-text p {
@@ -131,4 +131,75 @@ nav {
 #about-me {
     background-color: #ffffff;
     padding-top: 0; /* Ensure no gap between the sections */
+}
+
+#about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#about-me-text {
+    flex-grow: 1; /* Allow the text div to take up remaining space */
+    margin-left: 120px; /* Adjust space between image and text */
+}
+
+#about-me-text p {
+    font-size: 24px; /* Adjust as needed */
+}
+
+#jhanpic {
+    padding: 10px; /* Adjust the padding as needed */
+    border: var(--corner) solid;
+    border-image-source:
+        repeating-linear-gradient(
+            45deg,
+            transparent 0px,
+            transparent 4px,
+            var(--bg) 4px,
+            var(--bg) 8px,
+            transparent 8px
+        );
+    border-image-repeat: stretch;
+    border-image-slice: 35;
+    border-radius: 55px; /* Adjust the radius as needed */
+}
+
+:root {
+    --corner: 30px; /* Adjust the border thickness */
+    --bg: #008cff; /* Adjust the border color */
+}
+
+
+
+#about-me-text {
+    flex-grow: 1; /* Allow the text div to take up remaining space */
+    margin-left: 20px; /* Adjust space between image and text */
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px; /* Optional: round the corners */
+    color: #33FF00;
+    font-family: monospace;
+    font-size: 0.6em;
+    position: relative;
+}
+
+#about-me-text p {
+    margin: 0;
+    white-space: pre-wrap; /* Preserve whitespace */
+    word-wrap: break-word;
+}
+
+.blinking-underscore::after {
+    content: "_";
+    font-weight: bold;
+    bottom: 0;
+    left: calc(100% + 200px); /* Adjust the distance from the input text */
+    animation: blinking 0.75s step-end infinite;
+}
+
+@keyframes blinking {
+    from, to { visibility: hidden; }
+    50% { visibility: visible; }
 }

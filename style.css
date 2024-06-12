@@ -110,18 +110,19 @@ nav {
     color: black;
 }
 
-#about-me-p{
+#about-me-p {
     font-size: 100px;
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background: linear-gradient(to right, #ff0000, 
-                    #ffa600, #cf23cf, #fffb00);
-                    -webkit-text-fill-color: transparent; 
-                    -webkit-background-clip: text;
+    background: linear-gradient(to right, #ff0000, #ffa600, #cf23cf, #fffb00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     padding-left: 800px;
+    margin-bottom: 10px; /* Reduce margin to bring it closer to the content */
 }
+
 
 #home {
     background: linear-gradient(to bottom, #047e7e, #ffffff);
@@ -138,6 +139,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0; /* Remove top margin to bring it closer to the header */
 }
 
 #about-me-text {

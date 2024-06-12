@@ -111,14 +111,24 @@ nav {
 }
 
 #about-me-p{
-    font-size: 50px;
+    font-size: 100px;
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     background: linear-gradient(to right, #ff0000, 
                     #ffa600, #cf23cf, #fffb00);
                     -webkit-text-fill-color: transparent; 
                     -webkit-background-clip: text;
     padding-left: 800px;
+}
+
+#home {
+    background: linear-gradient(to bottom, #047e7e, #ffffff);
+    padding-bottom: 390px;
+}
+
+#about-me {
+    background-color: #ffffff;
+    padding-top: 0; /* Ensure no gap between the sections */
 }
